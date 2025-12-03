@@ -80,6 +80,11 @@ ros2 launch ur5_4dof display_4dof_with_gripper.launch.py
 ros2 launch ur5_4dof spawn_arm.launch.py
 
 
+## 🎥 Demo (GIF)
+
+![UR5 4-DoF Arm Demo](demo/RoboticArm-UR5_4DoF.gif)
+
+
 ## 🧠 My Contribution
 - Converted the 6-DoF UR5 into a custom 4-DoF robot
 - Redesigned joint structure & updated URDF/XACRO
