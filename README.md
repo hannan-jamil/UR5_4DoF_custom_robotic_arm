@@ -2,11 +2,11 @@
 ROS 2 Humble | Gazebo Classic | RViz | URDF/XACRO | ros2_control
 
 This project showcases a fully customized 4-DoF robotic manipulator, created by modifying the original Universal Robots UR5.
-I redesigned the UR5 arm by reducing degrees of freedom from 6 → 4, rebuilt the kinematic chain, integrated a Robotiq Hand-E style gripper, and created a complete simulation stack for ROS 2.
+I redesigned the UR5 arm by reducing degrees of freedom from 6 → 4, rebuilt the kinematic chain, integrated a Robotiq Hand-E style gripper, and created a simulation stack for ROS 2.
 
 This repo demonstrates strong skills in robot modeling, transforms, meshes, sensors, simulation, and ROS2 integration, making it ideal for robotics research and industrial applications.
 
-🎯 Project Features
+## 🎯 Project Features
 🔧 URDF/XACRO
 
 Completely rebuilt URDF for a 4-DoF arm
@@ -29,23 +29,12 @@ XACRO macros for easy reuse
 
 RViz2 for robot visualization
 
-Gazebo Classic simulation
-
 Add-on camera sensor (STL + DAE meshes)
 
 Example world files + launch scripts
 
-🤖 ros2_control Support
 
-Mock hardware interface for simulation
-
-ros2_control YAML configuration
-
-Joint trajectory controller support
-
-Launch files to view, spawn, and simulate the arm
-
-📂 Repository Structure
+## 📂 Repository Structure
 src/
  ├── ur5_4dof/                 --> Main robot package
  │    ├── urdf/                --> URDF + XACRO files
@@ -64,7 +53,7 @@ src/
       ├── meshes/
       └── urdf/
 
-▶️ How to Build & Run
+## ▶️ How to Build & Run
 1. Clone the repo
 git clone https://github.com/hannan-jamil/ur5_4dof_custom_robotic_arm.git
 cd ur5_4dof_custom_robotic_arm
@@ -75,9 +64,6 @@ source install/setup.bash
 
 3. View robot in RViz
 ros2 launch ur5_4dof display_4dof_with_gripper.launch.py
-
-4. Spawn in Gazebo
-ros2 launch ur5_4dof spawn_arm.launch.py
 
 
 ## 🎥 Demo (GIF)
@@ -90,8 +76,6 @@ ros2 launch ur5_4dof spawn_arm.launch.py
 - Redesigned joint structure & updated URDF/XACRO
 - Integrated a Robotiq HandE-style gripper (from CAD → meshes → URDF)
 - Fixed inertias, collision geometries, and link origins
-- Added Gazebo simulation with a camera sensor
-- Implemented ros2_control for joint trajectory control
 - Created complete launch system for RViz, Gazebo, and URDF viewing
 
 
