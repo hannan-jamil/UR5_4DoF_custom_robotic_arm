@@ -1,0 +1,32 @@
+<package format="3">
+  <name>ur5_4dof</name>
+  <version>0.0.0</version>
+  <description>4-DOF UR5 for ROS 2 Humble</description>
+  <maintainer email="hannanhj2@gmail.com">Hannan</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>xacro</build_depend>
+  <build_depend>joint_state_publisher</build_depend>
+  <build_depend>joint_state_publisher_gui</build_depend>
+  <build_depend>robot_state_publisher</build_depend>
+  <build_depend>rviz2</build_depend>
+  <build_depend>ur_description</build_depend>
+  <build_depend>robotiq_hande_description</build_depend>
+  <build_depend>gazebo_ros</build_depend>
+
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher_gui</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>ur_description</exec_depend>
+  <exec_depend>robotiq_hande_description</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
